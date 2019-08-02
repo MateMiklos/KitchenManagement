@@ -18,8 +18,10 @@ public class Chef extends Employee {
 
     public void askForIngredient(String askedIngredient) {
         if (askedIngredient.equals("carrot")) {
-            for (KitchenHelper kitchenHelper : ) {
-
+            for (KitchenHelper kitchenHelper : Kitchen.kitchenHelpers) {
+                if (kitchenHelper.getNumberOfCarrots() < 0) {
+                    kitchenHelper.giveCarrot();
+                }
             }
         } else if (askedIngredient.equals("potato")) {
 
