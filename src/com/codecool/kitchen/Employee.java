@@ -2,19 +2,18 @@ package com.codecool.kitchen;
 
 public class Employee {
 
-    private String name;
-    private String birthday;
-    private int salary;
+    String name;
+    String birthday;
+    int salary;
 
-    public Employee(String name, String birthday, int salary) {
-        this.name = name;
-        this.birthday = birthday;
-        this.salary = salary;
+    public Employee() {
     }
 
-    public Employee() {}
+    public float createTaxReport(int salary) {
+        return (float) (salary * 0.99);
+    }
 
-    public int createTaxReport(int salary) {
-        return (int) (salary * 0.99);
+    public void printTax() {
+        System.out.println(createTaxReport(this.salary));
     }
 }
