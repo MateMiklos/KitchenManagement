@@ -6,7 +6,8 @@ public class Chef extends Employee {
     private boolean hasKnifeSet;
 
     public Chef() {
-        if (exist) {
+        if (!exist) {
+            exist = true;
 
         }
 
