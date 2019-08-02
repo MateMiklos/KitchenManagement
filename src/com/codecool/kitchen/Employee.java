@@ -2,9 +2,9 @@ package com.codecool.kitchen;
 
 public class Employee {
 
-    String name;
-    String birthday;
-    int salary;
+    protected String name;
+    protected String birthday;
+    protected int salary;
 
     public Employee() {
     }

@@ -2,9 +2,13 @@ package com.codecool.kitchen;
 
 public class Chef extends Employee {
 
+    public static boolean exist = false;
     private boolean hasKnifeSet;
 
     public Chef() {
+        if (exist) {
+
+        }
 
     }
 
