@@ -32,4 +32,12 @@ public class KitchenHelper extends Employee {
     public void giveCarrot() {
         this.numberOfCarrots -= 1;
     }
+
+    public void givePotato() {
+        this.numberOfPotatoes -= 1;
+    }
+
+    public void giveMeat() {
+        this.numberOfMeat -= 1;
+    }
 }
